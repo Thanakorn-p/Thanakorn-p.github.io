@@ -8,69 +8,88 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            margin: 40px;
+            padding: 20px;
+            background-color: #f4f4f4;
             color: #333;
         }
 
         header {
+            background-color: #2C3E50;
+            color: #fff;
             text-align: center;
-            margin-bottom: 50px;
+            padding: 20px 0;
         }
 
-        h1 {
+        header h1, header h2 {
             margin: 0;
-            color: #444;
+        }
+
+        header p {
+            margin-top: 10px;
+            font-weight: 300;
+        }
+
+        section {
+            background-color: #fff;
+            padding: 20px;
+            margin: 20px 0;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
         h2 {
-            color: #666;
-            margin: 20px 0;
+            border-bottom: 2px solid #4bb3f8;
+            padding-bottom: 10px;
         }
 
         ul {
             list-style-type: none;
-            padding: 0;
         }
 
-        li {
-            margin-bottom: 10px;
+        footer {
+            margin-top: 30px;
+            background-color: #2C3E50;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
         }
 
-        a {
-            color: #007BFF;
+        footer a {
+            color: rgb(102, 219, 255); /* Changed color of the links in footer to blue */
             text-decoration: none;
         }
 
-        a:hover {
+        footer a:hover {
             text-decoration: underline;
         }
 
-        .contact-info {
-            margin-top: 20px;
+        @media screen and (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
         }
     </style>
 </head>
 
 <body>
     <header>
-        <h1>Thanakorn Pongritsakda</h1>
-        <p>Second-Year Student, Actuarial Science (International Program), Mahidol University</p>
+        <h1>THANAKORN PONGRITSAKDA</h1>
+        <h2>SECOND-YEAR STUDENT</h2>
+        <p>ACTUARIAL SCIENCE (INTERNATIONAL PROGRAM), MAHIDOL UNIVERSITY</p>
     </header>
 
-    <section>
+    <section id="profile">
         <h2>Profile</h2>
         <p>I'm a second-year actuarial science student who loves learning and working with others. I'm friendly, adaptable, and always ready to meet new people. I also enjoy programming and using technical skills to solve problems. I believe in hard work and being a team player, and I'm excited to contribute to different projects and environments.</p>
     </section>
 
-    <section>
+    <section id="education">
         <h2>Education</h2>
-        <p>Bachelor of Science, Actuarial Science<br>
-        Mahidol University, 2022 - Present<br>
-        CGPA (2 Semesters): 3.77</p>
+        <p><strong>Bachelor of Science, Actuarial Science</strong><br>Mahidol University, 2022 - Present</p>
+        <p>CGPA (2 Semesters): 3.77</p>
     </section>
 
-    <section>
-        <h2>Licenses and Certifications</h2>
+    <section id="certifications">
+        <h2>Licenses & Certifications</h2>
         <ul>
             <li>Google Cybersecurity Specialization</li>
             <li>Google Data Analytics Specialization</li>
@@ -78,50 +97,46 @@
         </ul>
     </section>
 
-    <section>
+    <section id="experience">
         <h2>Experience</h2>
-        <h3>Project Manager, Mahidol Startup Club (2022-2023)</h3>
-        <ul>
-            <li>Led initiatives fostering innovation and entrepreneurship at Mahidol University.</li>
-            <li>Shaped the club's direction, empowered entrepreneurs, nurtured startups, and cultivated a vibrant campus ecosystem.</li>
-        </ul>
-
-        <h3>Staff, Road To Actuary Camp (2023)</h3>
-        <ul>
-            <li>Conducted mock interviews and introduced actuarial science program to high school students.</li>
-        </ul>
-
-        <h3>Event Exhibitor, Space Pioneer Accelerating Regional Convention (2023)</h3>
-        <ul>
-            <li>Organized a design thinking workshop demonstrating the intersection of space and business/startups.</li>
-        </ul>
-
-        <h3>FWD The Futurist 2023</h3>
-        <ul>
-            <li>Top 10 Finalist: "How might we reimagine the insurance experience to meet the needs of the next generation of customers?"</li>
-        </ul>
+        <div class="job">
+            <h3>Project Manager, Mahidol Startup Club (2022-2023)</h3>
+            <ul>
+                <li>Led initiatives fostering innovation and entrepreneurship at Mahidol University.</li>
+                <li>Shaped the club's direction, empowered entrepreneurs, nurtured startups, and cultivated a vibrant campus ecosystem.</li>
+            </ul>
+            <h3>Staff, Road To Actuary Camp (2023)</h3>
+            <ul>
+                <li>Conducted mock interviews and introduced actuarial science program to high school students.</li>
+            </ul>
+            <h3>Event Exhibitor, Space Pioneer Accelerating Regional Convention (2023)</h3>
+            <ul>
+                <li>Organized a design thinking workshop demonstrating the intersection of space and business/startups.</li>
+            </ul>
+            <h3>FWD The Futurist 2023</h3>
+            <ul>
+                <li>Top 10 Finalist: "How might we reimagine the insurance experience to meet the needs of the next generation of customers?"</li>
+            </ul>
+        </div>
     </section>
 
-    <section>
+    <section id="skills">
         <h2>Skills</h2>
-        <h3>Programming:</h3>
-        <p>C, Python, VBA, R, SQL, git, shell script</p>
-
-        <h3>Languages:</h3>
-        <p>Thai (Native), English (Proficient: IELTS 6.0)</p>
-
-        <h3>General Skills:</h3>
-        <p>Analytical thinking, Logical reasoning, Problem-solving, Time management, Team Leadership</p>
+        <ul>
+            <li>Programming: C, Python, VBA, R, SQL, git, shell script</li>
+            <li>Languages: Thai (Native), English (Proficient: IELTS 6.0)</li>
+            <li>General Skills: Analytical thinking, Logical reasoning, Problem-solving, Time management, Team Leadership</li>
+        </ul>
     </section>
 
-    <section class="contact-info">
-        <h2>Contact</h2>
+    <footer>
+        <h3>Contact</h3>
         <p>Phone: +66 9 0974 5454</p>
         <p>Email: <a href="mailto:tpongritsakdawork@gmail.com">tpongritsakdawork@gmail.com</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/Thanakorn Pongritsakda" target="_blank">Thanakorn Pongritsakda</a></p>
-        <p>GitHub: <a href="https://github.com/Thanakorn-p" target="_blank">Thanakorn-p</a></p>
-        <p>Instagram: <a href="https://www.instagram.com/tnk_thn" target="_blank">tnk_thn</a></p>
-    </section>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/thanakorn-pongritsakda-971853225/">Thanakorn Pongritsakda</a></p>
+        <p>GitHub: <a href="https://github.com/Thanakorn-p">Thanakorn-p</a></p>
+        <p>Instagram: <a href="https://www.instagram.com/tnk_thn/">tnk_thn</a></p>
+    </footer>
 </body>
 
 </html>
